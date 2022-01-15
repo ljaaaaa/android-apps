@@ -26,6 +26,8 @@ public class Client implements Parcelable {
     boolean sentMessage = false;
     boolean connected = false;
 
+    String IPADDRESS = "10.0.0.155";
+
     public Client(NetworkPage thisPage) {
         this.thisPage = thisPage;
 
@@ -34,7 +36,7 @@ public class Client implements Parcelable {
             public void run() {
                 try {
                     thisPage.lock.lock();
-                    socket = new Socket("10.0.0.185", 2345);
+                    socket = new Socket(IPADDRESS, 2345);
                     br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                     bw = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
                     connected = true;
