@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomePage">
+
+    <fragment
+        android:id="@+id/HomePage"
+        android:name="lilja.kiiski.bottlecapbanker.HomePage"
+        android:label="Home Page"
+        tools:layout="@layout/home_page_layout">
+
+        <action
+            android:id="@+id/home_to_account"
+            app:destination="@id/AccountPage" />
+
+        <action
+            android:id="@+id/home_to_withdraw"
+            app:destination="@id/WithdrawPage" />
+
+        <action
+            android:id="@+id/home_to_deposit"
+            app:destination="@id/DepositPage" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/AccountPage"
+        android:name="lilja.kiiski.bottlecapbanker.AccountPage"
+        android:label="Account Page"
+        tools:layout="@layout/account_page_layout">
+
+        <action
+            android:id="@+id/account_to_edit_account"
+            app:destination="@id/EditAccountPage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EditAccountPage"
+        android:name="lilja.kiiski.bottlecapbanker.EditAccountPage"
+        android:label="Edit Account Page"
+        tools:layout="@layout/edit_account_page_layout">
+    </fragment>
+
+    <fragment
+        android:id="@+id/WithdrawPage"
+        android:name="lilja.kiiski.bottlecapbanker.WithdrawPage"
+        android:label="Withdraw Page"
+        tools:layout="@layout/withdraw_page_layout">
+    </fragment>
+
+    <fragment
+        android:id="@+id/DepositPage"
+        android:name="lilja.kiiski.bottlecapbanker.DepositPage"
+        android:label="Deposit Page"
+        tools:layout="@layout/deposit_page_layout">
+    </fragment>
+</navigation>
