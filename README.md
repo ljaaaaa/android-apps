@@ -1,4 +1,4 @@
-# Android Apps
+# android-apps
 These are the small and simple Android Apps Lilja has made
 
 <img src="https://github.com/LiljaKiiski/android-apps/blob/master/BottlecapBanker/images/cover.png" alt="drawing" width="200"/> <img src="https://github.com/LiljaKiiski/android-apps/blob/master/CandyClicker/images/cover.png" alt="drawing" width="200"/> <img src="https://github.com/LiljaKiiski/android-apps/blob/master/Do-ItList/images/cover.png" alt="drawing" width="200"/>
